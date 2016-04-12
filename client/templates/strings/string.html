@@ -1,0 +1,27 @@
+<template name="string">
+    <div>
+        {{#each string}}
+            <h1>{{this.cadena}}</h1>
+
+            <form id="editar">
+                <input id="modificar" type="text"/>
+                <input type="submit" value="Modificar"/>
+            </form>
+            <br>
+            <div>
+                <button id="uppercase">Mayus</button>
+                <button id="lowercase">Minus</button>
+            </div>
+            <br>
+            <div>
+                <h1>Substring</h1>
+                <form id="substring">
+                    <input id="inicioCadena" type="text" placeholder="Donde empieza la cadena"/>
+                    <input id="finalCadena" type="text" placeholder="Donde acaba la cadena"/>
+                    <input type="submit" value="Enviar"/>
+                </form>
+            </div>
+        {{/each}}
+    </div>
+
+</template>
